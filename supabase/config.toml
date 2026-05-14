@@ -1,0 +1,22 @@
+project_id = "nowckxkcwlzbmjfyinfu"
+
+[functions.kommo]
+verify_jwt = true
+
+[functions.clickup]
+verify_jwt = true
+
+[functions.goals]
+verify_jwt = true
+
+[functions.tasks]
+verify_jwt = true
+
+[functions.avisos]
+verify_jwt = true
+
+[functions.eventos]
+verify_jwt = true
+
+[functions.aniversariantes]
+verify_jwt = true
