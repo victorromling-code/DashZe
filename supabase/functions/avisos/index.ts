@@ -4,7 +4,7 @@ const CLICKUP_TOKEN = Deno.env.get("CLICKUP_TOKEN") ?? "";
 
 Deno.serve(async (req) => {
   if (req.method === "OPTIONS") {
-    return new Response("ok", { headers: corsHeaders });
+    return new Response("ok", { headers: corsHeaders(req) });
   }
 
   try {
@@ -43,8 +43,8 @@ Deno.serve(async (req) => {
       };
     });
 
-    return jsonResponse(tasks, 200);
+    return jsonResponse(tasks, 200, req);
   } catch (err) {
-    return jsonResponse({ error: String(err) }, 500);
+    return jsonResponse({ error: String(err) }, 500, req);
   }
 });
