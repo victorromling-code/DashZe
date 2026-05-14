@@ -4,6 +4,7 @@ import Metas from "./pages/Metas";
 import Mural from "./pages/Mural";
 import Aniversariantes from "./pages/Aniversariantes";
 import Eventos from "./pages/Eventos";
+import Marketing from "./pages/Marketing";
 
 const TABS = [
   { id: "funil", label: "Funil de Vendas", Component: FunilVendas },
@@ -11,6 +12,7 @@ const TABS = [
   { id: "mural", label: "Mural de Avisos", Component: Mural },
   { id: "aniversariantes", label: "Aniversariantes", Component: Aniversariantes },
   { id: "eventos", label: "Eventos", Component: Eventos },
+  { id: "marketing", label: "Marketing", Component: Marketing },
 ];
 
 export default function App() {
