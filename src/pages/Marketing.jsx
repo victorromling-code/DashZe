@@ -1,4 +1,4 @@
-const MARKETING_URL = "https://meta-leads-qualifier.vercel.app";
+const MARKETING_URL = "https://meta-leads-qualifier-mu.vercel.app";
 
 export default function Marketing() {
   return (
